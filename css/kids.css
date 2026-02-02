@@ -25,9 +25,7 @@
   min-height: 90vh !important;
 }
 
-/* =========================
-   HERO TEXT
-========================= */
+
 .hero-title {
   font-size: 3.2rem;
   font-weight: 800;
@@ -43,9 +41,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* =========================
-   PRODUCTS SECTION
-========================= */
+
 .kids-products {
   background: radial-gradient(circle at top, #0b1220, #020617);
 }
@@ -59,9 +55,6 @@
   color: #94a3b8;
 }
 
-/* =========================
-   FILTERS
-========================= */
 .filters {
   display: flex;
   justify-content: center;
@@ -82,9 +75,6 @@
   border-color: transparent;
 }
 
-/* =========================
-   BIKE CARD
-========================= */
 .bike-card {
   background: transparent;
   border-radius: 20px;
@@ -121,9 +111,6 @@
   font-weight: 600;
 }
 
-/* =========================
-   BUTTONS
-========================= */
 .btn-explore {
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
   color: #fff;
@@ -165,16 +152,9 @@
   color: #fff;
 }
 
-/* =========================
-   FILTER ITEMS
-========================= */
 .bike-item {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
 @media (max-width: 576px) {
 
   .kids-hero {
