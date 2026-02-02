@@ -813,11 +813,17 @@ html, body {
     grid-template-columns: 1fr; /* Mobile only */
   }
 
-  .cycle-tabs {
+ .cycle-tabs {
+    display: flex;
     flex-direction: row;
     overflow-x: auto;
-  }
+    gap: 12px;
+    padding-bottom: 6px;
 
+    /* highlight scroll */
+    scrollbar-width: thin;               /* Firefox */
+    scrollbar-color: #ff8a83 transparent;
+  }
   .cycle-tab {
     white-space: nowrap;
   }
