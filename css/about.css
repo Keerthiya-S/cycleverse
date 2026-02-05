@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-/* Slide */
+
 .about-slide {
   height: 90vh;
   background-size: cover;
@@ -12,7 +12,7 @@
   position: relative;
 }
 
-/* DARK OVERLAY (THIS WAS MISSING ❗) */
+
 .about-slide::after {
   content: "";
   position: absolute;
@@ -24,12 +24,11 @@
   );
 }
 
-/* Backgrounds */
 .slide-1 { background-image: url("../images/about-bg1.jpg"); }
 .slide-2 { background-image: url("../images/about-bg2.jpg"); }
 .slide-3 { background-image: url("../images/about-bg3.jpg"); }
 
-/* Content */
+
 .about-hero-content {
   position: absolute;
   top: 50%;
@@ -47,7 +46,6 @@
   animation-delay: 0.25s;
 }
 
-/* Text */
 .about-hero-content h1 {
   font-size: 3.2rem;
   font-weight: 800;
@@ -65,7 +63,6 @@
   margin-top: 12px;
 }
 
-/* Animation */
 @keyframes slideFade {
   from {
     opacity: 0;
@@ -77,11 +74,10 @@
   }
 }
 
-/* Faster fade */
+
 .carousel-fade .carousel-item {
   transition: opacity 0.6s ease-in-out;
 }
-/* WHO WE ARE */
 .about-intro {
   background: #0b0f19;
 }
@@ -97,7 +93,7 @@
   border-radius: 16px;
 }
 
-/* STATS */
+
 .about-stats {
   background: linear-gradient(135deg, #0f172a, #020617);
   padding: 60px 0;
@@ -114,12 +110,10 @@
   margin-top: 6px;
 }
 
-/* JOURNEY */
 .about-journey {
   background: #020617;
 }
 
-/* Timeline wrapper */
 .journey-timeline {
   position: relative;
   max-width: 700px;
@@ -127,7 +121,6 @@
   padding-left: 30px;
 }
 
-/* Vertical line */
 .journey-timeline::before {
   content: "";
   position: absolute;
@@ -138,13 +131,11 @@
   background: rgba(255,255,255,0.12);
 }
 
-/* Item */
 .journey-item {
   position: relative;
   padding: 18px 0 18px 30px;
 }
 
-/* DOT */
 .journey-dot {
   position: absolute;
   left: 0;
@@ -156,7 +147,6 @@
   box-shadow: 0 0 12px rgba(255,75,43,0.7);
 }
 
-/* Content */
 .journey-content h6 {
   margin: 0;
   font-weight: 600;
@@ -169,14 +159,14 @@
   font-size: 0.95rem;
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
   .journey-timeline {
     padding-left: 26px;
   }
 }
 
-/* MISSION */
+
 .about-mission {
   background: var(--cv-gradient);
   padding: 80px 0;
@@ -208,7 +198,6 @@
   opacity: 0.95;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .about-text {
     font-size: 0.95rem;
@@ -229,13 +218,11 @@
     height: 70vh;
   }
 
-  /* ✅ keep SAME centering logic, just override left */
   .about-hero-content {
     max-width: 80%;
     text-align: center;
   }
 
-  /* ✅ just reduce text sizes */
   .about-hero-content h1 {
     font-size: 1.5rem;
   }
