@@ -53,7 +53,7 @@
   const params = new URLSearchParams(window.location.search);
   const bikeId = params.get("id");
 
-  const bike = cannondaleBikes.find(b => b.id === bikeId);
+  const bike = electricBikes.find(b => b.id === bikeId);
 
   if (!bike) {
     document.body.innerHTML =
