@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Checkout | CycleVerse</title>
@@ -44,7 +45,7 @@
 
     .form-control {
       background: #020617;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(224, 70, 70, 0.562);
       color: #fff;
     }
 
@@ -54,43 +55,83 @@
       box-shadow: none;
       border-color: #ef4444;
     }
+
+    ::placeholder { 
+      color: rgba(255, 255, 255, 0.548) !important;
+    } 
+    ::-ms-input-placeholder { 
+      color: rgba(255, 255, 255, 0.6); 
+    }
+    /* ✅ MOBILE FIX — ONLY CENTERING */
+    @media (max-width: 768px) {
+
+      /* remove side gap */
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .checkout-wrapper {
+        align-items: flex-start;
+        padding: 20px 0;
+      }
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+      }
+
+      .col-lg-6 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .checkout-card {
+        width: 100%;
+        max-width: 420px;
+        padding: 20px;
+      }
+
+      .checkout-img {
+        max-height: 200px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<div class="container checkout-wrapper">
-  <div class="row g-4 w-100">
+  <div class="container checkout-wrapper">
+    <div class="row g-3 w-100">
 
-    <!-- LEFT : BIKE DETAILS -->
-    <div class="col-lg-6">
-      <div class="checkout-card text-center">
-        <img id="bikeImage" class="checkout-img mb-3">
-        <h3 id="bikeName"></h3>
-        <p class="price" id="bikePrice"></p>
+      <div class="col-lg-6">
+        <div class="checkout-card text-center">
+          <img id="bikeImage" class="checkout-img mb-3">
+          <h3 id="bikeName"></h3>
+          <p class="price" id="bikePrice"></p>
+        </div>
       </div>
-    </div>
 
-    <!-- RIGHT : USER DETAILS -->
-    <div class="col-lg-6">
-      <div class="checkout-card">
-        <h4 class="mb-3">Delivery Details</h4>
+      <div class="col-lg-6">
+        <div class="checkout-card">
+          <h4 class="mb-3">Delivery Details</h4>
 
-        <input type="text" class="form-control mb-3" placeholder="Full Name">
-        <input type="text" class="form-control mb-3" placeholder="Phone Number">
-        <input type="text" class="form-control mb-3" placeholder="Address">
-        <input type="text" class="form-control mb-3" placeholder="City">
-        <input type="text" class="form-control mb-3" placeholder="ZIP Code">
+          <input type="text" class="form-control mb-3" placeholder="Full Name">
+          <input type="text" class="form-control mb-3" placeholder="Phone Number">
+          <input type="text" class="form-control mb-3" placeholder="Address">
+          <input type="text" class="form-control mb-3" placeholder="City">
+          <input type="text" class="form-control mb-3" placeholder="ZIP Code">
 
-        <button class="btn btn-danger w-100 mt-2">
-          Place Order
-        </button>
+          <button class="btn btn-danger w-100 mt-2">
+            Place Order
+          </button>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
 
-<script src="../js/checkout.js"></script>
+  <script src="../js/checkout.js"></script>
 </body>
 </html>
