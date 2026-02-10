@@ -91,6 +91,47 @@ html, body {
   color: #fff;
   padding-left: 28px;
 }
+/* SEARCH INPUT */
+.cv-search-input {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+  border-radius: 0;
+  width: 220px;
+  padding: 8px 12px;
+}
+
+/* Placeholder color */
+.cv-search-input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* FOCUS STATE */
+.cv-search-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #dc3545; /* Bootstrap danger / premium red */
+}
+
+/* SEARCH BUTTON */
+.cv-search-btn {
+  border-radius: 0;
+  background: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 8px 14px;
+}
+
+/* ICON COLOR */
+.cv-search-btn i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* HOVER */
+.cv-search-btn:hover {
+  background: #b02a37;
+  border-color: #b02a37;
+}
 
 
 @media (min-width: 992px) {

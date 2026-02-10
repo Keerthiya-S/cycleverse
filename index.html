@@ -11,6 +11,7 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -64,7 +65,14 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a href="#" class="btn btn-danger rounded-0 px-4">Login</a>
+        <form class="d-flex align-items-center" onsubmit="return handleSearch(event)">
+          <input class="form-control cv-search-input" type="search" placeholder="Search bikes..." id="searchInput">
+          <button class="btn cv-search-btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+
       </div>
     </div>
 
@@ -83,7 +91,7 @@
           </p>
 
           <div class="d-flex gap-3 mt-4">
-            <a class="btn btn-danger px-4 py-2">Shop Now</a>
+            <a href="trek.html" class="btn btn-danger px-4 py-2">Shop Now</a>
             <a href="mountain.html" class="btn btn-outline-light px-4 py-2">Explore Bikes</a>
           </div>
         </div>
@@ -197,8 +205,8 @@
               CycleVerse ensures a smooth and premium riding experience.
             </p>
 
-            <a href="#" class="btn btn-danger px-4 py-2 mt-3">
-              Explore Our Services
+            <a href="about.html" class="btn btn-danger px-4 py-2 mt-3">
+              Explore Us
             </a>
           </div>
         </div>
@@ -206,7 +214,7 @@
     </div>
   </section>
   <!-- best seller -->
-  <section class="best-sellers-section">
+  <section class="best-sellers-section" id="bestsellers">
     <h2 class="section-title">Explore Best Sellers</h2>
 
     <div class="carousel-wrapper">
@@ -381,9 +389,9 @@
         <div class="col-md-3">
           <h5>Shop</h5>
           <ul>
-            <li>Bicycles</li>
-            <li>Brands</li>
-            <li>Best Sellers</li>
+            <li> <a href="mountain.html">Bicycles</a></li>
+            <li> <a href="trek.html">Brands</a></li>
+            <li> <a href="#bestsellers">Best Sellers</a></li>
             <li>Accessories</li>
           </ul>
         </div>
@@ -433,72 +441,72 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-  const data = {
-    mtb: {
-      title: "Mountain Bikes",
-      desc: "Built for rough terrains, trails and off-road adventures with maximum control and durability.",
-      image: "images/mountain-bike.jpg",
-      btn: "Explore MTB",
-      link: "mountain.html"
-    },
-    road: {
-      title: "Road Bikes",
-      desc: "Lightweight and fast bikes designed for smooth roads and long-distance speed rides.",
-      image: "images/road-bike.jpg",
-      btn: "Explore Road Bikes",
-      link: "roadbike.html"
-    },
-    electric: {
-      title: "Electric Bikes",
-      desc: "Perfect balance of comfort and performance for city rides and light trails.",
-      image: "images/electric-bike.jpg",
-      btn: "Explore Electric",
-      link: "electric.html"
-    },
-    kids: {
-      title: "Kids Bikes",
-      desc: "Safe, colorful and fun bikes designed specially for young riders.",
-      image: "images/kids-bike.png",
-      btn: "Explore Kids Bikes",
-      link: "kids.html"
-    }
-  };
+    const data = {
+      mtb: {
+        title: "Mountain Bikes",
+        desc: "Built for rough terrains, trails and off-road adventures with maximum control and durability.",
+        image: "images/mountain-bike.jpg",
+        btn: "Explore MTB",
+        link: "mountain.html"
+      },
+      road: {
+        title: "Road Bikes",
+        desc: "Lightweight and fast bikes designed for smooth roads and long-distance speed rides.",
+        image: "images/road-bike.jpg",
+        btn: "Explore Road Bikes",
+        link: "roadbike.html"
+      },
+      electric: {
+        title: "Electric Bikes",
+        desc: "Perfect balance of comfort and performance for city rides and light trails.",
+        image: "images/electric-bike.jpg",
+        btn: "Explore Electric",
+        link: "electric.html"
+      },
+      kids: {
+        title: "Kids Bikes",
+        desc: "Safe, colorful and fun bikes designed specially for young riders.",
+        image: "images/kids-bike.png",
+        btn: "Explore Kids Bikes",
+        link: "kids.html"
+      }
+    };
 
-  const tabs = document.querySelectorAll(".cycle-tab");
-  const display = document.querySelector(".cycle-display");
-  const title = document.getElementById("cycleTitle");
-  const desc = document.getElementById("cycleDesc");
-  const btn = document.querySelector(".cycle-btn");
+    const tabs = document.querySelectorAll(".cycle-tab");
+    const display = document.querySelector(".cycle-display");
+    const title = document.getElementById("cycleTitle");
+    const desc = document.getElementById("cycleDesc");
+    const btn = document.querySelector(".cycle-btn");
 
-  const defaultType = "mtb";
+    const defaultType = "mtb";
 
-  // ✅ Initial Load
-  title.textContent = data[defaultType].title;
-  desc.textContent = data[defaultType].desc;
-  btn.textContent = data[defaultType].btn;
-  btn.href = data[defaultType].link;
-  display.style.backgroundImage = `url(${data[defaultType].image})`;
+    // ✅ Initial Load
+    title.textContent = data[defaultType].title;
+    desc.textContent = data[defaultType].desc;
+    btn.textContent = data[defaultType].btn;
+    btn.href = data[defaultType].link;
+    display.style.backgroundImage = `url(${data[defaultType].image})`;
 
-  document
-    .querySelector(`.cycle-tab[data-type="${defaultType}"]`)
-    .classList.add("active");
+    document
+      .querySelector(`.cycle-tab[data-type="${defaultType}"]`)
+      .classList.add("active");
 
-  // ✅ Tab Click Handling
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
+    // ✅ Tab Click Handling
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
 
-      const type = tab.dataset.type;
+        const type = tab.dataset.type;
 
-      title.textContent = data[type].title;
-      desc.textContent = data[type].desc;
-      btn.textContent = data[type].btn;
-      btn.href = data[type].link;
-      display.style.backgroundImage = `url(${data[type].image})`;
+        title.textContent = data[type].title;
+        desc.textContent = data[type].desc;
+        btn.textContent = data[type].btn;
+        btn.href = data[type].link;
+        display.style.backgroundImage = `url(${data[type].image})`;
+      });
     });
-  });
-</script>
+  </script>
   <script>
     const track = document.getElementById("carouselTrack");
     const cardWidth = 330; // card + gap
@@ -550,7 +558,7 @@
       });
     });
   </script>
-
+  <script src="js/search.js"></script>
 </body>
 
 </html>

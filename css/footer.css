@@ -92,6 +92,13 @@
   font-size: 0.95rem;
   cursor: pointer;
 }
+.cv-footer-links li a {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 .cv-footer-links li:hover {
   color: #ff9a44;
