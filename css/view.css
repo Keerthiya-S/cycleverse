@@ -57,7 +57,16 @@
   margin-bottom: 6px;
   color: #cbd5e1;
 }
+#buyNowBtn{
+  background: var(--cv-gradient) !important;
+  border: none !important;
+  transition: all 0.35s ease;
+}
 
+#buyNowBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(255, 75, 43, 0.45);
+}
 @media (max-width: 768px) {
 
   .bike-view {

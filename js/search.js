@@ -29,6 +29,6 @@ const bikeSearchData = [
     if (result) {
       window.location.href = result.url;
     } else {
-      alert("No bike found 😕");
+      alert("No bike found ");
     }
   }
