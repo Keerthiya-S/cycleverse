@@ -3,7 +3,7 @@ const cannondaleBikes = [
     id: "synapse-carbon",
     name: "Cannondale Synapse Carbon",
     price: "₹95,999",
-    image: "../images/cannondale1.png",
+    image: "images/cannondale1.png",
     description:
       "Endurance road bike offering comfort with elite performance. Designed for long rides with smooth handling and lightweight carbon frame.",
     specs: [
@@ -19,7 +19,7 @@ const cannondaleBikes = [
     id: "trail-5",
     name: "Cannondale Trail 5",
     price: "₹52,999",
-    image: "../images/cannondale2.webp",
+    image: "images/cannondale2.webp",
     description:
       "Confident mountain bike built for rugged trails with responsive control and durable aluminium frame.",
     specs: [
@@ -35,7 +35,7 @@ const cannondaleBikes = [
     id: "quick-4",
     name: "Cannondale Quick 4",
     price: "₹56,999",
-    image: "../images/cannondale3.png",
+    image: "images/cannondale3.png",
     description:
       "Lightweight hybrid bike built for speed, fitness, and comfortable city commuting.",
     specs: [

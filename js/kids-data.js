@@ -4,7 +4,7 @@ const kidsBikes = [
     name: "Speedster Jr",
     description: "Sporty kids bicycle built for fun, speed and confidence.",
     price: "₹4,199",
-    image: "../images/kids1.png",
+    image: "images/kids1.png",
     colors: ["red", "blue", "black"],
     specs: [
       "Age Group: 5–8 Years",
@@ -19,7 +19,7 @@ const kidsBikes = [
     name: "Twinkle Star",
     description: "Cute and colorful bicycle designed especially for young girls.",
     price: "₹3,799",
-    image: "../images/kids2.png",
+    image: "images/kids2.png",
     colors: ["pink", "purple", "white"],
     specs: [
       "Age Group: 4–7 Years",
@@ -34,7 +34,7 @@ const kidsBikes = [
     name: "Balance King",
     description: "Balance bike to help kids learn riding without pedals.",
     price: "₹3,299",
-    image: "../images/kids3.png",
+    image: "images/kids3.png",
     colors: ["yellow", "black"],
     specs: [
       "Age Group: 2–4 Years",
@@ -49,7 +49,7 @@ const kidsBikes = [
     name: "Junior Rider",
     description: "Strong and stylish bicycle for adventurous young riders.",
     price: "₹4,599",
-    image: "../images/kids4.webp",
+    image: "images/kids4.webp",
     colors: ["green", "black"],
     specs: [
       "Age Group: 6–9 Years",
@@ -64,7 +64,7 @@ const kidsBikes = [
     name: "Pink Flash",
     description: "Bright pink bicycle with smooth handling and safety focus.",
     price: "₹4,099",
-    image: "../images/kids5.png",
+    image: "images/kids5.png",
     colors: ["pink", "white"],
     specs: [
       "Age Group: 5–8 Years",
@@ -79,7 +79,7 @@ const kidsBikes = [
     name: "Balance Hero",
     description: "Lightweight balance bike for early riding confidence.",
     price: "₹3,499",
-    image: "../images/kids6.png",
+    image: "images/kids6.png",
     colors: ["blue", "orange"],
     specs: [
       "Age Group: 2–4 Years",

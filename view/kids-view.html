@@ -63,7 +63,7 @@
     throw new Error("Bike not found");
   }
 
-  document.getElementById("bikeImage").src = bike.image;
+  document.getElementById("bikeImage").src = "../" + bike.image;
   document.getElementById("bikeName").textContent = bike.name;
   document.getElementById("bikeDesc").textContent = bike.description;
   document.getElementById("bikePrice").textContent = bike.price;

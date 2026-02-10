@@ -4,7 +4,7 @@ const roadBikes = [
     name: "Velocity Pro",
     description: "High-performance road bike built for speed, endurance, and long rides.",
     price: "₹39,999",
-    image: "../images/road1.png",
+    image: "images/road1.png",
     colors: ["red", "black", "white"],
     specs: {
       frame: "Carbon Fiber",
@@ -18,7 +18,7 @@ const roadBikes = [
     name: "Aero Glide",
     description: "Lightweight aerodynamic bike designed for smooth city and highway rides.",
     price: "₹34,499",
-    image: "../images/road2.png",
+    image: "images/road2.png",
     colors: ["blue", "black"],
     specs: {
       frame: "Aluminum Alloy",
@@ -32,7 +32,7 @@ const roadBikes = [
     name: "Urban Sprint",
     description: "Perfect balance of comfort and speed for daily commuting.",
     price: "₹28,999",
-    image: "../images/road3.png",
+    image: "images/road3.png",
     colors: ["grey", "green"],
     specs: {
       frame: "Steel",
@@ -46,7 +46,7 @@ const roadBikes = [
     name: "Carbon Flash",
     description: "Ultra-light carbon road bike built for professional racing performance.",
     price: "₹45,999",
-    image: "../images/road4.png",
+    image: "images/road4.png",
     colors: ["black", "yellow"],
     specs: {
       frame: "Carbon Fiber",
@@ -60,7 +60,7 @@ const roadBikes = [
     name: "Enduro Ride",
     description: "Durable road bike ideal for long-distance rides and endurance training.",
     price: "₹32,499",
-    image: "../images/road5.png",
+    image: "images/road5.png",
     colors: ["orange", "black"],
     specs: {
       frame: "Aluminum",
@@ -74,7 +74,7 @@ const roadBikes = [
     name: "City Flow",
     description: "Comfort-focused road bike designed for daily city commuting.",
     price: "₹26,999",
-    image: "../images/road6.png",
+    image: "images/road6.png",
     colors: ["white", "blue"],
     specs: {
       frame: "Steel",

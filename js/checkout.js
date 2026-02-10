@@ -8,4 +8,4 @@ if (!bike) {
 
 document.getElementById("bikeName").innerText = bike.name;
 document.getElementById("bikePrice").innerText = bike.price;
-document.getElementById("bikeImage").src = bike.image;
+document.getElementById("bikeImage").src = "../" + bike.image;

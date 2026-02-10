@@ -4,7 +4,7 @@ const electricBikes = [
     name: "Volt City",
     description: "Smart electric bike designed for effortless city commuting.",
     price: "₹49,999",
-    image: "../images/electric1.png",
+    image: "images/electric1.png",
     colors: ["black", "blue", "grey"],
     specs: [
       "Motor: 250W Brushless",
@@ -19,7 +19,7 @@ const electricBikes = [
     name: "Power Trail",
     description: "High-torque electric mountain bike built for rough terrains.",
     price: "₹64,999",
-    image: "../images/electric2.webp",
+    image: "images/electric2.webp",
     colors: ["green", "black"],
     specs: [
       "Motor: 350W",
@@ -34,7 +34,7 @@ const electricBikes = [
     name: "Urban Boost",
     description: "Hybrid electric bike combining comfort and performance.",
     price: "₹54,499",
-    image: "../images/electric3.png",
+    image: "images/electric3.png",
     colors: ["white", "red"],
     specs: [
       "Motor: 250W",
@@ -49,7 +49,7 @@ const electricBikes = [
     name: "City Spark",
     description: "Compact electric bike perfect for daily city rides.",
     price: "₹46,999",
-    image: "../images/electric4.png",
+    image: "images/electric4.png",
     colors: ["yellow", "black"],
     specs: [
       "Motor: 250W",
@@ -64,7 +64,7 @@ const electricBikes = [
     name: "Peak E-X",
     description: "Premium electric mountain bike with extended range.",
     price: "₹69,999",
-    image: "../images/electric5.png",
+    image: "images/electric5.png",
     colors: ["black", "orange"],
     specs: [
       "Motor: 500W",
@@ -79,7 +79,7 @@ const electricBikes = [
     name: "Hybrid Pulse",
     description: "Smooth electric hybrid bike for city and highway use.",
     price: "₹58,99",
-    image: "../images/electric6.png",
+    image: "images/electric6.png",
     colors: ["blue", "grey"],
     specs: [
       "Motor: 350W",
